@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Journals</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts: Poppins and Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('tce.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #5a4e3e;
+    }
+    .navbar {
+      background-color: brown;
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-size: 1rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding: 0%;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+  background-color: brown;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="College Logo" style="height: 50px; width: 300px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="board.html"><i class="fas fa-users"></i> Board Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#submission-guidelines"><i class="fas fa-file-alt"></i> Submission Guidelines</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="browse.html"><i class="fas fa-book"></i> Browse Journals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Browse Journals Section -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="text-center">Browse Journals</h2>
+        <div class="form-group">
+          <label for="volume-select">Select a Volume:</label>
+          <select class="form-control" id="volume-select">
+            <option value="">-- Select Volume --</option>
+            <option value="vol1">Volume 1</option>
+            <option value="vol2">Volume 2</option>
+            <option value="vol3">Volume 3</option>
+          </select>
+        </div>
+        <div id="articles-container" class="mt-4">
+          <p class="text-muted">Please select a volume to see the articles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 College Journal. All Rights Reserved.</p>
+    <p>Contact us at: <a href="mailto:contact@college.edu">contact@college.edu</a> | Phone: +123 456 7890</p>
+  </footer>
+
+  <!-- Bootstrap JS, jQuery, and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    const articles = {
+      vol1: [
+        { title: "Article 1", description: "Description for Article 1" },
+        { title: "Article 2", description: "Description for Article 2" }
+      ],
+      vol2: [
+        { title: "Article 3", description: "Description for Article 3" },
+        { title: "Article 4", description: "Description for Article 4" }
+      ],
+      vol3: [
+        { title: "Article 5", description: "Description for Article 5" },
+        { title: "Article 6", description: "Description for Article 6" }
+      ]
+    };
+
+    document.getElementById("volume-select").addEventListener("change", function () {
+      const volume = this.value;
+      const container = document.getElementById("articles-container");
+      container.innerHTML = "";
+
+      if (volume && articles[volume]) {
+        articles[volume].forEach(article => {
+          const articleElement = document.createElement("div");
+          articleElement.className = "card mt-3";
+          articleElement.innerHTML = `
+            <div class="card-body">
+              <h5>${article.title}</h5>
+              <p>${article.description}</p>
+            </div>
+          `;
+          container.appendChild(articleElement);
+        });
+      } else {
+        container.innerHTML = '<p class="text-muted">Please select a volume to see the articles.</p>';
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Board - Thiagarajar Journal</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts: Poppins and Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('tce.jpg'); /* Background image URL */
+      background-size: cover; /* Ensures the image covers the entire page */
+      background-position: center center; /* Centers the image */
+      background-attachment: fixed; /* Keeps the background fixed during scrolling */
+      color: #5a4e3e; /* Relaxing, soft brown tone */
+    }
+    .navbar {
+      background-color: brown; /* Coral color */
+    }
+    
+    .navbar-brand, .nav-link {
+      color: white !important;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #fff !important;
+      text-decoration: underline;
+    }
+    .section-title {
+      text-align: center;
+      color: #4E2A84;
+      background-color: white;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin: 60px;
+      font-size: 2.5rem;
+      border-radius: 100px;
+      margin-top: 40px;
+    }
+    .section-content {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+      background-color: brown;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer a {
+      color:white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      margin: 15px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .editor-card {
+      border: 2px solid #4E2A84;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .editor-card-body {
+      padding: 15px;
+    }
+    .editor-card-title {
+      color: #4E2A84;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .editor-description {
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .editor-role {
+      font-size: 1.2rem;
+      color: #7f7f7f;
+    }
+    .icon {
+      font-size: 2rem;
+      color: #4E2A84;
+      margin-right: 10px;
+    }
+    .editor-name {
+      font-size: 1.2rem;
+      color: #4E2A84;
+      font-weight: 600;
+    }
+    .editor-role, .editor-description {
+      color: #333;
+      font-size: 1rem;
+    }
+    .list-group-item {
+      background-color: transparent;
+      border: none;
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="TJESDT Logo" style="height: 50px; width: 300px;" href="index.html">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="board.html"><i class="fas fa-users"></i> Board Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#submission-guidelines"><i class="fas fa-file-alt"></i> Submission Guidelines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><i class="fas fa-phone-alt"></i> Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+
+    <!-- Editorial Board Members Section -->
+    <div class="section-content">
+      <h2 class="section-title">Editorial Board Members</h2>
+
+      <!-- Editor-in-Chief Card -->
+      <div class="card editor-card">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-chalkboard-teacher icon"></i>
+            <div>
+              <h4 class="editor-card-title">Dr. L. Ashok Kumar</h4>
+              <p class="editor-role">Editor-in-Chief</p>
+              <p class="editor-description">Principal, Thiagarajar College of Engineering (TCE)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editors Cards -->
+      <div class="section-content">
+        <h3 class="editor-name">Editors:</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Dr. S. Charlesraja</strong> - Editor, Associate Professor - Electrical & Electronics Engineering (EEE)</li>
+          <li class="list-group-item"><strong>Dr. P. Karthikeyan</strong> - Editor, Associate Professor - Information Technology (IT)</li>
+          <li class="list-group-item"><strong>Dr. K. Rajeswari</strong> - Editor, Associate Professor - Electronics and Communication Engineering (ECE)</li>
+        </ul>
+      </div>
+
+      <!-- Associate Editors Cards -->
+      <div class="section-content">
+        <h3 class="editor-name">Associate Editors:</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Dr. S. Sridevi</strong> - Associate Editor, Associate Professor - Information Technology (IT)</li>
+          <li class="list-group-item"><strong>Dr. I. Chandramathy</strong> - Associate Editor, Professor - Architecture (ARCH)</li>
+          <li class="list-group-item"><strong>Dr. S. Umar Sherif</strong> - Associate Editor, Assistant Professor - Mechanical Engineering (MECH)</li>
+          <li class="list-group-item"><strong>Dr. P. Velusamy</strong> - Associate Editor, Assistant Professor - Physics (PHY)</li>
+        </ul>
+      </div>
+
+        
+
+    <!-- Reviewers Board Members Section -->
+    <div class="section-content">
+      <h2 class="section-title">Reviewers Board Members</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Dr. G. Madhupriya</strong> - Reviewer, Associate Professor - Computer Science Engineering (CSE)</li>
+        <li class="list-group-item"><strong>Ms. M. Aruna</strong> - Reviewer, Assistant Professor - Civil Engineering (CIVIL)</li>
+        <li class="list-group-item"><strong>Dr. M. Rajalakshmi</strong> - Reviewer, Assistant Professor - Mechatronics (MECT)</li>
+        <li class="list-group-item"><strong>Ms. Priya Thiagarajan</strong> - Reviewer, Assistant Professor - Computer Science and Business Systems (CSBS)</li>
+      </ul>
+    </div>
+
+    <!-- Publication Board Members Section -->
+    <div class="section-content">
+      <h2 class="section-title">Publication Board Members</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Mr. T. Prakash</strong> - Publication Member, Assistant Professor - Mechanical Engineering (MECH)</li>
+        <li class="list-group-item"><strong>Dr. L. Radha</strong> - Publication Member, Librarian</li>
+      </ul>
+    </div>
+
+    <<!-- Advisory Board Internal Members Section -->
+<div class="section-content">
+  <h2 class="section-title">Advisory Board Internal Members</h2>
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Dr. S. J. Thiruvengadam</strong> - Advisory Board Member, Professor - Electronics and Communication Engineering (ECE)</li>
+    <li class="list-group-item"><strong>Dr. S. Rajaram</strong> - Advisory Board Member, Professor - Electronics and Communication Engineering (ECE)</li>
+    <li class="list-group-item"><strong>Dr. S. MercyShalinie</strong> - Advisory Board Member, Professor - Computer Science Engineering (CSE)</li>
+    <li class="list-group-item"><strong>Dr. S. Md. Mansoorroomi</strong> - Advisory Board Member, Professor - Electronics and Communication Engineering (ECE)</li>
+    <li class="list-group-item"><strong>Dr. G. Balaji</strong> - Advisory Board Member, Professor - Architecture (ARCH)</li>
+    <li class="list-group-item"><strong>Dr. K. Hariharan</strong> - Advisory Board Member, Professor - Electronics and Communication Engineering (ECE)</li>
+    <li class="list-group-item"><strong>Dr. S. Baskar</strong> - Advisory Board Member, Professor - Electrical and Electronics Engineering (EEE)</li>
+    <li class="list-group-item"><strong>Dr. S. Arul Mary</strong> - Advisory Board Member, Professor - Civil Engineering (CIVIL)</li>
+    <li class="list-group-item"><strong>Dr. K. Srithar</strong> - Advisory Board Member, Professor - Mechanical Engineering (MECH)</li>
+    <li class="list-group-item"><strong>Dr. B. Manimegalai</strong> - Advisory Board Member, Professor - Electronics and Communication Engineering (ECE)</li>
+    <li class="list-group-item"><strong>Dr. C. Deisy</strong> - Advisory Board Member, Professor - Information Technology (IT)</li>
+    <li class="list-group-item"><strong>Dr. P. Chitra</strong> - Advisory Board Member, Professor – Computer Applications/CSBS (CA/CSBS)</li>
+    <li class="list-group-item"><strong>Dr. M. Palaninatharaja</strong> - Advisory Board Member, Professor - Mechanical Engineering (MECT)</li>
+    <li class="list-group-item"><strong>Dr. M. Mahendran</strong> - Advisory Board Member, Professor - Physics (PHY)</li>
+    <li class="list-group-item"><strong>Dr. M. Kottaisamy</strong> - Advisory Board Member, Professor - Chemistry (CHEM)</li>
+    <li class="list-group-item"><strong>Dr. S. Jeyabharathi</strong> - Advisory Board Member, Professor - Mathematics (MATHS)</li>
+    <li class="list-group-item"><strong>Dr. S. Parthasarathy</strong> - Advisory Board Member, Professor - Applied Mathematics and Computational Science (AMCS)</li>
+    <li class="list-group-item"><strong>Dr. A. Tamilselvi</strong> - Advisory Board Member, Professor - Engineering (ENG)</li>
+    <li class="list-group-item"><strong>Dr. J. Jinu Louishidha Kitchley</strong> - Advisory Board Member, Professor - Architecture (ARCH)</li>
+  </ul>
+</div>
+
+
+<!-- Advisory Board External Members Section -->
+<div class="section-content">
+  <h2 class="section-title">Advisory Board External Members</h2>
+  <p class="text-center">External members to be added.</p>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  <p1>© 2025 Thiagarajar Journal of Engineering, Science, Design, and Technology. All Rights Reserved.</p1><br>
+  <p1>Contact us at: <a href="mailto:contact@tjesdt.org">contact@tjesdt.org</a> | Phone: +91 456 7890</p1><br>
+  <div>
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="mailto:contact@tjesdt.org"><i class="fas fa-envelope fa-2x"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS, jQuery, and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+   
